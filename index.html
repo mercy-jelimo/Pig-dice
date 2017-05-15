@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="js/scripts.js"></script>
+  <script src="js/jquery-3.2.1.js"></script>
+  <title>Pig Dice</title>
+</head>
+
+<body>
+  <div class="container page-wrapper">
+    <center>
+      <h1>Pig Dice</h1></center>
+    <center><img src="img/dice.jpg" alt="img"></center>
+    <div class="row">
+      <div class="col-xs-12" id="Player names:">
+        <div "well col-md-4 col-md-offset-4">
+          <form class="addNames">
+            <div class="col-sm-4 text center">
+
+              <select class="form-control" id="dice-type">
+                <option>Two Dice Pig</option>
+                <option>Big Pig</option>
+                <option>Skunk</option>
+
+              </select>
+
+              <select class="form-control" id="game-type">
+                <option>Easy</option>
+                <option>Hard</option>
+              </select>
+
+            </div>
+
+            <div class="form-group">
+              <label for="player-one">Player One</label>
+              <input type="text" class="form control" id="player-one">
+
+            </div>
+            <div class="form-group">
+              <label for="player-two">Player Two</label>
+              <input type="text" class="form control" id="player-two">
+
+            </div>
+            <button type="submit" name="btn btn-default stretch">Add Names</button>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="col-xs-12" id="show-message">
+        <div class="message-wrapper">
+          <strongid="message">
+            </strong>
+
+
+
+        </div>
+
+      </div>
+      <div class="col-sm-4 well score-wrapper">
+        <h3> <span class="primary">Current Turn:</span> <span id="current-player"></span></h3>
+        <h3> <span class="primary">Current Round:</span> <span id="current-round-score"></span></h3>
+
+        <h4> <span class="player-one-name primary"></span><span id="player-one-score"></span>0</h4>
+        <h4> <span class="player-two-name primary"></span><span id="player-two-score"></span>0</h4>
+
+
+      </div>
+      <div class="col-sm-4 text-center dice-result-wrapper">
+        <span> this roll: </span>
+        <div id="dice-image"></div>
+
+      </div>
+
+      <div class="col-sm-4 well">
+        <button id="roll dice" class="btn btn-danger stretch">Role Dice</button>
+        <button id="hold" class="btn btn-danger stretch">Hold</button>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
